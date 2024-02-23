@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 
 const api = {
-  key: "ENTER_YOUR_API_KEY_HERE",
+  key: "43a8a13ad667286177eab50aacb556d8",
   base: "https://api.openweathermap.org/data/2.5/",
 };
 
@@ -34,7 +34,7 @@ function App() {
             placeholder="Enter city/town..."
             onChange={(e) => setSearch(e.target.value)}
           />
-          <button onClick={searchPressed}>Search</button>
+          <button className="search-button" onClick={searchPressed}>Search</button>
         </div>
 
         {/* If weather is not undefined display results from API */}
